@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e5">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-15dp"
+        android:src="@drawable/layout_top"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btn_Reset"
+        android:background="@drawable/btnstyle_gray"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignTop="@+id/btn_Mute"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btn_Mute"
+        android:background="@drawable/btnstyle_gray"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/resetbutton"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="22dp"
+        android:layout_alignTop="@+id/btn_Reset"
+        android:layout_alignLeft="@+id/btn_Reset"
+        android:layout_alignStart="@+id/btn_Reset" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/TextView"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="-25dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/mute"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignRight="@+id/btn_Mute"
+        android:layout_alignEnd="@+id/btn_Mute" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="警示音/靜音"
+        android:id="@+id/TextView2"
+        android:textSize="12dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_alignTop="@+id/TextView"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/iv_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/logo"/>
+
+    <tw.com.plitc.thomashsu.areaalert.CircleProgressBar
+        android:id="@+id/AIR1_CPBar"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <tw.com.plitc.thomashsu.areaalert.CircleProgressBar
+        android:id="@+id/AIR2_CPBar"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_below="@+id/AIR1_CPBar"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+    <tw.com.plitc.thomashsu.areaalert.CircleProgressBar
+        android:id="@+id/AIR3_CPBar"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_below="@+id/AIR2_CPBar"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO. 1"
+        android:id="@+id/TextView3"
+        android:layout_alignTop="@+id/AIR1_CPBar"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="#868686"
+        android:layout_marginTop="56dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO. 2"
+        android:id="@+id/TextView4"
+        android:layout_alignTop="@+id/AIR2_CPBar"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="#868686"
+        android:layout_marginTop="56dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO. 3"
+        android:id="@+id/TextView5"
+        android:layout_alignTop="@+id/AIR3_CPBar"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="#868686"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:id="@+id/tv_AIR1"
+        android:textSize="45sp"
+        android:textColor="#ff9c00"
+        android:layout_below="@+id/TextView3"
+        android:layout_alignRight="@+id/TextView3"
+        android:layout_alignEnd="@+id/TextView3"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:id="@+id/tv_AIR2"
+        android:textSize="45sp"
+        android:textColor="#ff9c00"
+        android:layout_below="@+id/TextView4"
+        android:layout_alignRight="@+id/TextView4"
+        android:layout_alignEnd="@+id/TextView4"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:id="@+id/tv_AIR3"
+        android:textSize="45sp"
+        android:textColor="#ff9c00"
+        android:layout_below="@+id/TextView5"
+        android:layout_alignRight="@+id/TextView5"
+        android:layout_alignEnd="@+id/TextView5"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bar"
+        android:id="@+id/tv_AIR1_unit"
+        android:textColor="#868686"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/tv_AIR1"
+        android:layout_toRightOf="@+id/tv_AIR1"
+        android:layout_toEndOf="@+id/tv_AIR1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kg"
+        android:id="@+id/tv_AIR2_unit"
+        android:textColor="#868686"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/tv_AIR2"
+        android:layout_toRightOf="@+id/tv_AIR2"
+        android:layout_toEndOf="@+id/tv_AIR2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mmHg"
+        android:id="@+id/tv_AIR3_unit"
+        android:textColor="#868686"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/tv_AIR3"
+        android:layout_toRightOf="@+id/tv_AIR3"
+        android:layout_toEndOf="@+id/tv_AIR3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="氧氣  Oxygen"
+        android:id="@+id/TextView6"
+        android:textSize="22sp"
+        android:textColor="#868686"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_AIR1_unit"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="空氣　Air　"
+        android:id="@+id/TextView7"
+        android:textSize="22sp"
+        android:textColor="#868686"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_AIR2_unit"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="真空  Vacuum"
+        android:id="@+id/TextView8"
+        android:textSize="22sp"
+        android:textColor="#868686"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_AIR3_unit"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(吸引)"
+        android:id="@+id/TextView9"
+        android:textSize="22sp"
+        android:textColor="#868686"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/TextView8"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_AIR1_unit"
+        android:background="#00ffffff"
+        android:layout_above="@+id/TextView6"
+        android:layout_alignLeft="@+id/tv_AIR1_unit"
+        android:layout_alignStart="@+id/tv_AIR1_unit"
+        android:layout_alignRight="@+id/tv_AIR3_unit"
+        android:layout_alignEnd="@+id/tv_AIR3_unit"
+        android:layout_alignTop="@+id/tv_AIR1" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_AIR2_unit"
+        android:background="#00ffffff"
+        android:layout_above="@+id/TextView7"
+        android:layout_alignLeft="@+id/tv_AIR2_unit"
+        android:layout_alignStart="@+id/tv_AIR2_unit"
+        android:layout_alignRight="@+id/tv_AIR3_unit"
+        android:layout_alignEnd="@+id/tv_AIR3_unit"
+        android:layout_alignTop="@+id/tv_AIR2" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_AIR3_unit"
+        android:background="#00ffffff"
+        android:layout_above="@+id/TextView8"
+        android:layout_alignLeft="@+id/tv_AIR3_unit"
+        android:layout_alignStart="@+id/tv_AIR3_unit"
+        android:layout_alignRight="@+id/tv_AIR3_unit"
+        android:layout_alignEnd="@+id/tv_AIR3_unit"
+        android:layout_alignTop="@+id/tv_AIR3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/btn_AIR1_limit"
+        android:background="#00ffffff"
+        android:layout_alignTop="@+id/tv_AIR1"
+        android:layout_alignLeft="@+id/tv_AIR1"
+        android:layout_alignStart="@+id/tv_AIR1"
+        android:layout_toLeftOf="@+id/tv_AIR1_unit"
+        android:layout_toStartOf="@+id/tv_AIR1_unit"
+        android:layout_alignBottom="@+id/tv_AIR1" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/btn_AIR2_limit"
+        android:background="#00ffffff"
+        android:layout_alignTop="@+id/tv_AIR2"
+        android:layout_alignLeft="@+id/tv_AIR2"
+        android:layout_alignStart="@+id/tv_AIR2"
+        android:layout_toLeftOf="@+id/tv_AIR2_unit"
+        android:layout_toStartOf="@+id/tv_AIR2_unit"
+        android:layout_alignBottom="@+id/tv_AIR2" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/btn_AIR3_limit"
+        android:background="#00ffffff"
+        android:layout_alignTop="@+id/tv_AIR3"
+        android:layout_alignLeft="@+id/tv_AIR3"
+        android:layout_alignStart="@+id/tv_AIR3"
+        android:layout_toLeftOf="@+id/tv_AIR3_unit"
+        android:layout_toStartOf="@+id/tv_AIR3_unit"
+        android:layout_alignBottom="@+id/tv_AIR3" />
+</RelativeLayout>
